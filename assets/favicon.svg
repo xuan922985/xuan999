@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#d21f3c"/>
+  <path d="M12 12h8v8h-8z" fill="#f5f2ea" opacity=".95"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="1" fill="#f5f2ea">SY</text>
+  <path d="M50 14h4v4h-4z" fill="#c8a96e"/>
+</svg>

@@ -1,0 +1,494 @@
+@charset "UTF-8";
+
+/* =========================================================
+   石宇奇个人网站 · 简单版
+   适合 Dreamweaver 初学者阅读和修改
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f4ed;
+  color: #222222;
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0 0 24px;
+}
+
+a {
+  color: #b3122f;
+}
+
+h1,
+h2,
+h3 {
+  color: #111111;
+  font-family: "Songti SC", "SimSun", "Times New Roman", serif;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 44px;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 28px;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* 顶部导航 */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd6ca;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 30px;
+  padding: 18px 0;
+}
+
+.logo {
+  color: #111111;
+  font-family: "Songti SC", "SimSun", serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #b3122f;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  color: #444444;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav a:hover,
+.nav a.active {
+  border-bottom-color: #b3122f;
+  color: #b3122f;
+}
+
+/* 页面主体 */
+main {
+  padding: 40px 0 60px;
+}
+
+.kicker {
+  margin: 0 0 10px;
+  color: #b3122f;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.lead {
+  max-width: 760px;
+  color: #555555;
+  font-size: 17px;
+}
+
+.page-head {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ddd6ca;
+}
+
+.section {
+  margin: 48px 0;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 4px solid #b3122f;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.section-title p {
+  margin: 4px 0 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+.caption {
+  margin-top: 6px;
+  color: #777777;
+  font-size: 12px;
+}
+
+.note {
+  color: #777777;
+  font-size: 13px;
+}
+
+/* 首页大图区 */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 48px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+}
+
+.hero-en {
+  margin: 0 0 16px;
+  color: #b3122f;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.hero-text > p {
+  color: #555555;
+}
+
+.hero-image {
+  flex: 1.25;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 330px;
+  border: 1px solid #ddd6ca;
+  object-fit: cover;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 20px;
+  background: #b3122f;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #8c0d24;
+}
+
+/* 图文两栏 */
+.two-column {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.two-column .text,
+.two-column .photo {
+  flex: 1;
+}
+
+.photo img {
+  width: 100%;
+  border: 1px solid #ddd6ca;
+}
+
+.story-image {
+  width: 100%;
+  max-height: 480px;
+  border: 1px solid #ddd6ca;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* 数据块 */
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.fact {
+  flex: 1 1 180px;
+  padding: 18px;
+  border: 1px solid #ddd6ca;
+  background: #ffffff;
+}
+
+.fact strong {
+  display: block;
+  color: #b3122f;
+  font-family: "Songti SC", "SimSun", serif;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.fact span {
+  color: #666666;
+  font-size: 13px;
+}
+
+/* 卡片 */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 280px;
+  border: 1px solid #ddd6ca;
+  background: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 16px;
+}
+
+.card-text p {
+  margin: 6px 0 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* 引用 */
+blockquote {
+  margin: 36px 0;
+  padding: 18px 22px;
+  border-left: 4px solid #b3122f;
+  background: #ffffff;
+  color: #333333;
+  font-family: "Songti SC", "SimSun", serif;
+  font-size: 20px;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  color: #777777;
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+}
+
+/* 表格 */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border: 1px solid #ddd6ca;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #eee8dd;
+  font-weight: bold;
+}
+
+/* 普通列表 */
+.simple-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.simple-list li {
+  margin-bottom: 8px;
+}
+
+/* 图片集 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #ddd6ca;
+  background: #ffffff;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery figcaption {
+  padding: 8px 4px 2px;
+  color: #555555;
+  font-size: 13px;
+}
+
+.gallery figcaption span {
+  display: block;
+  color: #888888;
+  font-size: 11px;
+}
+
+/* 页面链接 */
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.link-list a {
+  padding: 10px 16px;
+  border: 1px solid #ddd6ca;
+  background: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  border-color: #b3122f;
+  color: #b3122f;
+}
+
+/* 页脚 */
+.site-footer {
+  margin-top: 60px;
+  padding: 28px 0;
+  background: #222222;
+  color: #cccccc;
+  font-size: 13px;
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+/* 手机适配 */
+@media (max-width: 760px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .header-inner {
+    display: block;
+  }
+
+  .nav {
+    margin-top: 10px;
+    gap: 10px 16px;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-image {
+    margin-top: 24px;
+  }
+
+  .hero-image img {
+    height: 240px;
+  }
+
+  .two-column {
+    display: block;
+  }
+
+  .photo {
+    margin-top: 20px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: auto;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  main {
+    padding-top: 25px;
+  }
+
+  .section {
+    margin: 36px 0;
+  }
+}
